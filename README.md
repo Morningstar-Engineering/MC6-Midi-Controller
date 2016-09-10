@@ -2,6 +2,7 @@
 Binary releases for the Morningstar Engineering Midi Controllers
 
 Latest Release: v2.3
+
 __Midi Types__
 * Added SysEx Midi Type.
   * Users can now create their own custom SysEx message to send out via DIN5 Midi and USB Midi.
