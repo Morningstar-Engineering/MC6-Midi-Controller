@@ -4,7 +4,7 @@
 ##Developmental Release: v2.4 Beta
 
 __Switching Changes__
-* Changed Edit Bank from Switch [C + F] to Switch [B + E]
+* Changed Edit Bank from Switch [C + F] to Switch [B + F]
 * Changed Toggle Midi Editor from Switch [A + D] + [F] to Switch [D + C]
 * Changed Toggle Midi Thru from Switch [A + D] + [C] to Switch [F + A]
 
