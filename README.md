@@ -1,7 +1,7 @@
 # MC6-Midi-Controller
-Binary releases for the Morningstar Engineering Midi Controllers
+####Binary releases for the Morningstar Engineering Midi Controllers
 
-Developmental Release: v2.4 Beta
+##Developmental Release: v2.4 Beta
 
 __Switching Changes__
 * Changed Edit Bank from Switch [C + F] to Switch [B + E]
@@ -15,7 +15,7 @@ __Additional Preset Switches__
 * Switch [B + E] calls Preset J
 * Switch [C + F] calls Preset K
 
-Latest Release: v2.3
+##Latest Release: v2.3
 
 __Midi Types__
 * Added SysEx Midi Type.
