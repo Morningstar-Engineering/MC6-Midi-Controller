@@ -1,9 +1,13 @@
 # MC6-Midi-Controller
 ####Binary releases for the Morningstar Engineering Midi Controllers
 
-##Developmental Release: v2.4 Beta
+# Developmental Release: v2.4 Beta
+## PLEASE READ THIS DOCUMENT AND NOTE THE CHANGES BEFORE UPLOADING
 
-__Switching Changes__
+### If you enjoy living on the edge, this release has all the latest features. Most are experimental and still constantly changing. For a stable version, please download the latest stable release (v2.3).
+
+### Switching Changes
+__Switch Combination__
 * Changed Edit Bank from Switch [C + F] to Switch [B + F]
 * Changed Toggle Midi Editor from Switch [A + D] + [F] to Switch [D + C]
 * Changed Toggle Midi Thru from Switch [A + D] + [C] to Switch [F + A]
@@ -14,6 +18,26 @@ __Additional Preset Switches__
 * Switch [A + D] calls Preset I
 * Switch [B + E] calls Preset J
 * Switch [C + F] calls Preset K
+
+### Midi Type Changes
+
+__Set Bank__
+* Currently, Set Bank is only executed after all other messages are executed. We have changed it to execute chronologically along with other Midi Messages. This will allow you to take advantage of bank-specific messages and apply it to other banks. For example, from Bank 1, you can do a Set Bank to Bank 2, and then apply a Clear Toggle message to Bank 2.
+* Bank number of last Set Bank will print. However, you can jump to multiple banks in-between.
+
+__Clear Toggle (Should be renamed to "Set Toggle")__ 
+#### For Number 1 = 127 (All Presets)
+* Set Value 1 = 0- 63 to clear (Stop Blink)
+* Set Value 2 = 64 - 127 to engage (Blink)
+
+#### For individual toggle selection
+* Set Number 1 = 0 to clear (Stop Blink)
+* Set Number 1 = 1 to engage (Blink)
+* Set Value 1, Number 2 and Value 2 to be the presets you want to set.
+
+### Bug Fixes
+__Bug Fixes__
+* Fixed issue where toggle states are not saved after using the Set Bank function.
 
 ##Latest Release: v2.3
 
