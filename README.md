@@ -39,7 +39,7 @@ __Clear Toggle (Should be renamed to "Set Toggle")__
 __Bug Fixes__
 * Fixed issue where toggle states are not saved after using the Set Bank function.
 
-##Latest Release: v2.3
+# Latest Release: v2.3
 
 __Midi Types__
 * Added SysEx Midi Type.
