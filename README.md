@@ -2,11 +2,11 @@
 ####Binary releases for the Morningstar Engineering Midi Controllers
 
 ##Latest Stable Release: v2.3
-## PLEASE READ THIS DOCUMENT AND NOTE THE CHANGES BEFORE UPLOADING
+### PLEASE READ THIS DOCUMENT AND NOTE THE CHANGES BEFORE UPLOADING
 
-# Developmental Release: v2.4 Beta
+## Developmental Release: v2.4 Beta
 
-### If you enjoy living on the edge, this release has all the latest features. Most are experimental and still constantly changing. For a stable version, please download the latest stable release (v2.3).
+#### If you enjoy living on the edge, this release has all the latest features. Most are experimental and still constantly changing. For a stable version, please download the latest stable release (v2.3).
 
 ### Switching Changes
 __Switch Combination__
@@ -45,14 +45,7 @@ __Bug Fixes__
 * Fixed issue where toggle states are not saved after using the Set Bank function.
 
 
-#### For individual toggle selection
-* Set Number 1 = 0 to clear (Stop Blink)
-* Set Number 1 = 1 to engage (Blink)
-* Set Value 1, Number 2 and Value 2 to be the presets you want to set.
-
-### Bug Fixes
-__Bug Fixes__
-* Fixed issue where toggle states are not saved after using the Set Bank function.
+## Stable Release: v2.3
 
 __Midi Message Types__
 * Added SysEx Midi Type.
