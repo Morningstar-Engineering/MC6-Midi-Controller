@@ -1,7 +1,6 @@
 # MC6-Midi-Controller
 ####Binary releases for the Morningstar Engineering Midi Controllers
 
-<<<<<<< HEAD
 ##Latest Stable Release: v2.3
 ## PLEASE READ THIS DOCUMENT AND NOTE THE CHANGES BEFORE UPLOADING
 
@@ -22,13 +21,11 @@ __Additional Preset Switches__
 * Switch [B + E] calls Preset J
 * Switch [C + F] calls Preset K
 
-<<<<<<< HEAD
 ### New Midi Message Types
 __Select Expression Message__
 * Select specific Midi Messages to send with your expression pedal, instead of sending all at once.
 
 ### Midi Message Type Changes
-
 __Set Bank__
 * Currently, Set Bank is only executed after all other messages are executed. We have changed it to execute chronologically along with other Midi Messages. This will allow you to take advantage of bank-specific messages and apply it to other banks. For example, from Bank 1, you can do a Set Bank to Bank 2, and then apply a Clear Toggle message to Bank 2.
 * Bank number of last Set Bank will print. However, you can jump to multiple banks in-between.
