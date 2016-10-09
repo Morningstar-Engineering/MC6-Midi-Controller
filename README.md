@@ -1,10 +1,12 @@
 # MC6-Midi-Controller
 ####Binary releases for the Morningstar Engineering Midi Controllers
 
+<<<<<<< HEAD
 ##Latest Stable Release: v2.3
 ## PLEASE READ THIS DOCUMENT AND NOTE THE CHANGES BEFORE UPLOADING
 
 # Developmental Release: v2.4 Beta
+
 ### If you enjoy living on the edge, this release has all the latest features. Most are experimental and still constantly changing. For a stable version, please download the latest stable release (v2.3).
 
 ### Switching Changes
@@ -20,6 +22,7 @@ __Additional Preset Switches__
 * Switch [B + E] calls Preset J
 * Switch [C + F] calls Preset K
 
+<<<<<<< HEAD
 ### New Midi Message Types
 __Select Expression Message__
 * Select specific Midi Messages to send with your expression pedal, instead of sending all at once.
@@ -34,6 +37,16 @@ __Clear Toggle (Should be renamed to "Set Toggle")__
 #### For Number 1 = 127 (All Presets)
 * Set Value 1 = 0- 63 to clear (Stop Blink)
 * Set Value 2 = 64 - 127 to engage (Blink)
+
+#### For individual toggle selection
+* Set Number 1 = 0 to clear (Stop Blink)
+* Set Number 1 = 1 to engage (Blink)
+* Set Value 1, Number 2 and Value 2 to be the presets you want to set.
+
+### Bug Fixes
+__Bug Fixes__
+* Fixed issue where toggle states are not saved after using the Set Bank function.
+
 
 #### For individual toggle selection
 * Set Number 1 = 0 to clear (Stop Blink)
