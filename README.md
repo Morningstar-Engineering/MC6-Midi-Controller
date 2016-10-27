@@ -25,6 +25,9 @@ __Additional Preset Switches__
 __Select Expression Message__
 * Select specific Midi Messages to send with your expression pedal, instead of sending all at once.
 
+__Toggle Page__
+* Toggle between presets A-F and G-L on the main page.
+
 ### Midi Message Type Changes
 __Set Bank__
 * Currently, Set Bank is only executed after all other messages are executed. We have changed it to execute chronologically along with other Midi Messages. This will allow you to take advantage of bank-specific messages and apply it to other banks. For example, from Bank 1, you can do a Set Bank to Bank 2, and then apply a Clear Toggle message to Bank 2.
