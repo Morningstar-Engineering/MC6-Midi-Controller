@@ -153,7 +153,7 @@ Calibrate your expression pedal by setting the Heel Down and Toe Down positions.
 ### Display
 When this feature is enabled, your expression pedal’s name (as named by you) and the expression pedal’s position will be displayed when the pedal is being moved.
 
-## SING EXTERNAL CONTROLLERS
+## USING EXTERNAL CONTROLLERS
 You can connect external Aux or Midi controllers to your MC6 and expand its functionality and capability.
 
 ### Aux Switch Controllers
