@@ -49,7 +49,7 @@
 | Control Change   |CC Number|CC Value| -| -|Channel| - |
 | Program Change Toggle   |PC Number (Inactive) | - | PC Number (Active) | - |Channel | - |
 | Control Change Toggle   |CC Number (Inactive) |CC Value (Inactive) |CC Number (Active) |CC Value (Active) | Channel | - |
-| Program Change Toggle Hold   |PC Number (Press)|-| PC Number (Release)| -|1 - 16| - |
+| Program Change Toggle Hold   |PC Number (Press)|-| PC Number (Release)| -|Channel| - |
 | Control Change Toggle Hold   |CC Number (Press)|CC Value (Press)|CC Number (Release)|CC Value (Release)|Channel| - |
 | Control Change Hold Delay   |CC Number (Press)|CC Value (Press)|CC Number (Hold)|CC Value (Hold)|Channel| - |
 | Note On   |Note Value|Velocity| -             | -              |Channel| - |
@@ -61,7 +61,7 @@
 | PC Scroll Down   |Select slot number|1 = Decrease. 0 = No change| -| -|Channel|-|
 | MC6 Bank Up    |-|-| -| -|-|-|
 | MC6 Bank Down   |-|-| -| -|-|-|
-| Conditional Type   |Refer|Refer| -| -|-|
+| Conditional Type   |Refer|Refer| -| -|-|-|
 | System Real Time   |Select System Msg Type|-| -| -|-|-|
 | AxeFX Tuner   |CC Nummber for Tuner|Cc Value for Tuner Engage|CC Number for Tuner|CC Value for Tuner Disengage|Channel|-|
 | Custom Sysex   |First msg = Sysex Length, else Sysex Number|Sysex Number|Sysex Number|Sysex Number|-|-|
@@ -70,7 +70,7 @@
 | Set Toggle   |127 = Set All, else Preset Number| Preset Number| Preset Number| Preset Number|-|-|
 | Blink    |-|-| -| -|-|-|
 | Set Bank   |127 = Last used bank, else Bank Number|-| -| -|-|-|
-| Select Expression Message   |Expression Input Number (1 or 2)|Select Exp Message | -| -|-|-|
+| Select Expression Message   |Expression Input Number. 0 = Exp1, 1 = Exp2|Select Exp Message. 0 = Select All. 1 = Msg1| -| -|-|-|
 | Toggle Page    |-|-| -| -|-|-|
 ---
 
