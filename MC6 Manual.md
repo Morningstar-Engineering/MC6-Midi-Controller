@@ -1,9 +1,7 @@
 # MC6 Firmware Manual 
-
 This section explains how the controller works and how pressing individual switches or different switch combinations will interact with the controller.
 
 Please refer to the Midi Type Table as well for more information on selecting the correct midi type that you need.
-
 
 ## Overview
 ### Powering up the MC6
