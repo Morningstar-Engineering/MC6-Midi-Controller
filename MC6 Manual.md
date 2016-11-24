@@ -74,12 +74,12 @@ To program a switch:
 1. Press the switch you wish to program
 2. Press Switches [D + F] together. This will take you the the Switch Settings Menu shown below.
 
+![alt text](img/ProgSw2.png "ProgSw2")
+
 ### Msg
 Edit the MIDI message that will be sent by each switch.
 
 ![alt text](img/ProgMessage.png "ProgMessage")
-
-![alt text](img/ProgSw2.png "ProgSw2")
 
 Use switches [A] and [B] to move between parameters, and switches [F] and [C] to increase and decrease parameter values. At any time, press [D+E] together to save your current message settings, and press [E+F] to return to the previous menu without saving.
 
