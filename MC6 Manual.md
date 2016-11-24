@@ -4,7 +4,7 @@ This section explains how the controller works and how pressing individual switc
 Please refer to the Midi Type Table as well for more information on selecting the correct midi type that you need.
 
 ## POWERING UP THE MC6
-![alt text](img/Start-up-Page.png "Power Up")
+![alt text](https://github.com/Morningstar-Engineering/MC6-Midi-Controller/blob/master/img/Start-up-Page.png "Power Up")
 
 Your MC6 can be powered by any one of these methods:
 * 9VDC Centre Negative power supply
@@ -15,7 +15,7 @@ Your MC6 can be powered by any one of these methods:
   * Connect a USB cable to the MC6. The MC6 is capable of being fully powered by USB.
  
 ## Connections
-![alt text](img/IOs.png "IOs")
+![alt text](https://github.com/Morningstar-Engineering/MC6-Midi-Controller/blob/master/img/IOs.png "IOs")
 * Midi In/Receive
   * This is where the MC6 receives MIDI messages from other MIDI devices.
 * Midi Out/Send/Thru
@@ -29,7 +29,7 @@ Your MC6 can be powered by any one of these methods:
 ### Accessing Controller Settings:
 To access the Controller Settings Menu, hold down switches [D + F] while powering up the MC6.
 
-![alt text](img/MainPage.png "MainPage")
+![alt text](https://github.com/Morningstar-Engineering/MC6-Midi-Controller/blob/master/img/MainPage.png "MainPage")
 
 ###mThru
 Switch on/off the MIDI thru function on the MC6. This function allows the MC to relay MIDI messages from other devices to devices further down the MIDI chain.
@@ -37,25 +37,25 @@ Switch on/off the MIDI thru function on the MC6. This function allows the MC to 
 ### Reset
 To do a factory reset, hold down for 2 seconds. The MC6 will show that it is performing a factory reset. All user presets and settings will be lost when a factory rest is done. 
 
-![alt text](img/Channel.png "Channel")
+![alt text](https://github.com/Morningstar-Engineering/MC6-Midi-Controller/blob/master/img/Channel.png "Channel")
 
 ### MidiCh
 Set the MIDI receive channel for the MC6. The MC6 can receive messages from external midi controllers.
 
-![alt text](img/ChangeExp.png "ChangeExp")
+![alt text](https://github.com/Morningstar-Engineering/MC6-Midi-Controller/blob/master/img/ChangeExp.png "ChangeExp")
 
 ### ChgInp
 Change Expression Input Type. The two 1/4 inch inputs on the MC6 can each be used independently for expression pedals or external aux switches.
 
 **IMPORTANT** - Please note that if you do not have any expression pedals/external switches connected to the MC6, your Expression Inputs should be set to [Expn Pedal]. Otherwise the MC6 will hang on the main page as it will think that an external switch is being pressed.
 
-![alt text](img/SwSens.png "SwSens")
+![alt text](https://github.com/Morningstar-Engineering/MC6-Midi-Controller/blob/master/img/SwSens.png "SwSens")
 
 ###SwSens
 Set switch sensitivity. Choose from 1 (least sensitive) to 5 (most sensitive). By default, this is set to 3 and should be comfortable for most users. Depending on personal taste, you may adjust sensitivity to help you bank up/down (by stepping on 2 switches at once) more accurately.
 
 ## SCROLLING THROUGH BANKS
-![alt text](img/ScrollBanks.png "ScrollBanks")
+![alt text](https://github.com/Morningstar-Engineering/MC6-Midi-Controller/blob/master/img/ScrollBanks.png "ScrollBanks")
 ###Scrolling through Banks
 Step on switches [A + B] together to bank down and switches [B + C] to bank up. There are a total of 30 banks of 6 programmable switches on the MC6.
 
@@ -63,23 +63,23 @@ Step on switches [A + B] together to bank down and switches [B + C] to bank up. 
 ### Activating Presets
 Each switch corresponds to the display name closest to it. Pressing switch [A] activates Preset A, switch [B] activates Preset B and so forth.
 
-![alt text](img/DisplayNames.png "DisplayNames")
+![alt text](https://github.com/Morningstar-Engineering/MC6-Midi-Controller/blob/master/img/DisplayNames.png "DisplayNames")
 
 ## PROGRAMMING SWITCHES
 On a new controller, all switches are initially labelled as EMPTY. It is up to you to decide exactly what each one will do.
 
-![alt text](img/ProgSw1.png "ProgSw1")
+![alt text](https://github.com/Morningstar-Engineering/MC6-Midi-Controller/blob/master/img/ProgSw1.png "ProgSw1")
 
 To program a switch:
 1. Press the switch you wish to program
 2. Press Switches [D + F] together. This will take you the the Switch Settings Menu shown below.
 
-![alt text](img/ProgSw2.png "ProgSw2")
+![alt text](https://github.com/Morningstar-Engineering/MC6-Midi-Controller/blob/master/img/ProgSw2.png "ProgSw2")
 
 ### Msg
 Edit the MIDI message that will be sent by each switch.
 
-![alt text](img/ProgMessage.png "ProgMessage")
+![alt text](https://github.com/Morningstar-Engineering/MC6-Midi-Controller/blob/master/img/ProgMessage.png "ProgMessage")
 
 Use switches [A] and [B] to move between parameters, and switches [F] and [C] to increase and decrease parameter values. At any time, press [D+E] together to save your current message settings, and press [E+F] to return to the previous menu without saving.
 
@@ -99,26 +99,26 @@ Hold down to clear all settings on current switch.
 ### Name
 * Name your switches. This will be displayed on the main screen of the MC6.
 
-![alt text](img/ProgName.png "ProgName")
+![alt text](https://github.com/Morningstar-Engineering/MC6-Midi-Controller/blob/master/img/ProgName.png "ProgName")
 
 * Use switches [A] and [B] to move between characters, and switches [F] and [C] to change characters. Pressing switch [D] allows you to skip characters and scroll through more quickly. At any time, press [D+E] together to save your current settings and exit, or press [E+F] to exit without saving.
 
 **HANDY TIP: Quick Scroll through Common Names**
 Some common names have been pre-programmed for your convenience. Use switches [A+B] and [B+C] to scroll through them.
 
-![alt text](img/ProgName1.png "ProgName1")
+![alt text](https://github.com/Morningstar-Engineering/MC6-Midi-Controller/blob/master/img/ProgName1.png "ProgName1")
 
 ### FullName
 Choose a longer name for the selected switch. This name will be displayed when the switch is stepped on. If left blank, no full name will be shown when the switch is stepped on.
 
-![alt text](img/ProgFullName.png "ProgFullName")
+![alt text](https://github.com/Morningstar-Engineering/MC6-Midi-Controller/blob/master/img/ProgFullName.png "ProgFullName")
 
 ## BANK SETTINGS
-![alt text](img/BankSettings.png "BankSettings")
+![alt text](https://github.com/Morningstar-Engineering/MC6-Midi-Controller/blob/master/img/BankSettings.png "BankSettings")
 ### ACCESSING BANK EDIT MODE
 On the home screen, press switches [C+F] to enter Bank Edit mode shown below.
 
-![alt text](img/BankSettings1.png "BankSettings1")
+![alt text](https://github.com/Morningstar-Engineering/MC6-Midi-Controller/blob/master/img/BankSettings1.png "BankSettings1")
 
 ### BankName
 Name your current bank. Naming banks is done the same way as naming switches. Please refer to page 9.
@@ -131,16 +131,16 @@ Paste copied bank settings to current bank.
 ### Programming Expression Pedals
 Similar to programming switches, pressing Switch [A + C] will allow you to program your last moved expression pedal.
 
-![alt text](img/ExpPedal.png "ExpPedal")
+![alt text](https://github.com/Morningstar-Engineering/MC6-Midi-Controller/blob/master/img/ExpPedal.png "ExpPedal")
 
 ### Expression Pedal Settings Menu
 
-![alt text](img/ExpPedal1.png "ExpPedal1")
+![alt text](https://github.com/Morningstar-Engineering/MC6-Midi-Controller/blob/master/img/ExpPedal1.png "ExpPedal1")
 
 ### Edit
 Choose what you want your expression pedal to control. Be sure to calibrate your expression pedal first (see below). Use only expression pedals with 10k to 25k potentiometers, with wiper to tip.
 
-![alt text](img/ExpPedal2.png "ExpPedal2")
+![alt text](https://github.com/Morningstar-Engineering/MC6-Midi-Controller/blob/master/img/ExpPedal2.png "ExpPedal2")
 
 Programming expression pedals is very similar to programming switches (refer to page 8). The CC number for your expression pedal message is represented by Number 1 and the range of values sent will be from Value 1 to Value 2. Each expression pedal can send up to 4 MIDI messages.
 
