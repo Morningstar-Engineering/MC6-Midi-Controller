@@ -94,8 +94,10 @@ Hold down to clear all settings on current switch.
 ### Copy
 * Press to copy the settings of the current switch.
 * **IMPORTANT** - Holding down this switch will copy and paste this particular switch’s settings to the same switch across all banks. Do not hold down this switch if you do not wish for this to happen. 
+
 ### Paste
 * Press to paste copied switch settings onto current switch.
+
 ### Name
 * Name your switches. This will be displayed on the main screen of the MC6.
 
