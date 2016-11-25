@@ -3,8 +3,9 @@ This section explains how the controller works and how pressing individual switc
 
 Please refer to the Midi Type Table as well for more information on selecting the correct midi type that you need.
 
+----------
 ## POWERING UP THE MC6
-![alt text](https://raw.githubusercontent.com/Morningstar-Engineering/MC6-Midi-Controller/master/img/Start-up-Page.png "Power Up")
+![Starting Page](https://raw.githubusercontent.com/Morningstar-Engineering/MC6-Midi-Controller/master/img/Start-up-Page.png)
 
 Your MC6 can be powered by any one of these methods:
 * 9VDC Centre Negative power supply
@@ -15,7 +16,7 @@ Your MC6 can be powered by any one of these methods:
   * Connect a USB cable to the MC6. The MC6 is capable of being fully powered by USB.
  
 ## Connections
-![alt text](https://raw.githubusercontent.com/Morningstar-Engineering/MC6-Midi-Controller/master/img/IOs.png "IOs")
+![In Outs](https://raw.githubusercontent.com/Morningstar-Engineering/MC6-Midi-Controller/master/img/IOs.png)
 * Midi In/Receive
   * This is where the MC6 receives MIDI messages from other MIDI devices.
 * Midi Out/Send/Thru
@@ -29,20 +30,20 @@ Your MC6 can be powered by any one of these methods:
 ### Accessing Controller Settings:
 To access the Controller Settings Menu, hold down switches [D + F] while powering up the MC6.
 
-![alt text](https://raw.githubusercontent.com/Morningstar-Engineering/MC6-Midi-Controller/master/img/MainPage.png "MainPage")
+![MainPage](https://raw.githubusercontent.com/Morningstar-Engineering/MC6-Midi-Controller/master/img/MainPage.png)
 
-###mThru
+### mThru
 Switch on/off the MIDI thru function on the MC6. This function allows the MC to relay MIDI messages from other devices to devices further down the MIDI chain.
 
 ### Reset
 To do a factory reset, hold down for 2 seconds. The MC6 will show that it is performing a factory reset. All user presets and settings will be lost when a factory rest is done. 
 
-![alt text](https://raw.githubusercontent.com/Morningstar-Engineering/MC6-Midi-Controller/master/img/Channel.png "Channel")
+![Channel](https://raw.githubusercontent.com/Morningstar-Engineering/MC6-Midi-Controller/master/img/Channel.png)
 
 ### MidiCh
 Set the MIDI receive channel for the MC6. The MC6 can receive messages from external midi controllers.
 
-![alt text](https://raw.githubusercontent.com/Morningstar-Engineering/MC6-Midi-Controller/master/img/ChangeExp.png "ChangeExp")
+![ChangeExp](https://raw.githubusercontent.com/Morningstar-Engineering/MC6-Midi-Controller/master/img/ChangeExp.png)
 
 ### ChgInp
 Change Expression Input Type. The two 1/4 inch inputs on the MC6 can each be used independently for expression pedals or external aux switches.
@@ -51,12 +52,12 @@ Change Expression Input Type. The two 1/4 inch inputs on the MC6 can each be use
 
 ![alt text](https://raw.githubusercontent.com/Morningstar-Engineering/MC6-Midi-Controller/master/img/SwSens.png "SwSens")
 
-###SwSens
+### SwSens
 Set switch sensitivity. Choose from 1 (least sensitive) to 5 (most sensitive). By default, this is set to 3 and should be comfortable for most users. Depending on personal taste, you may adjust sensitivity to help you bank up/down (by stepping on 2 switches at once) more accurately.
 
 ## SCROLLING THROUGH BANKS
 ![alt text](https://raw.githubusercontent.com/Morningstar-Engineering/MC6-Midi-Controller/master/img/ScrollBanks.png "ScrollBanks")
-###Scrolling through Banks
+### Scrolling through Banks
 Step on switches [A + B] together to bank down and switches [B + C] to bank up. There are a total of 30 banks of 6 programmable switches on the MC6.
 
 ## SWITCHES AND DISPLAY NAMES
@@ -172,6 +173,8 @@ The MC6 is able to read incoming MIDI messages. It will read messages sent to th
 |Bank Up|1|0 - 127|
 |Preset A - L|10 - 21|0 - 127|
 
+<br>
+
 |Function|PC Number|
 |:------:|:-------:|
 |Jump to Bank| 0 - 29|
@@ -201,3 +204,8 @@ Download the MC6 Updater Software and latest Firmware Updates from our downloads
 http://www.morningstarfx.com/downloads
 
 Connect the MC6 to your computer via the included USB cable, and use the Updater Software to upload the latest firmware to your controller.
+
+
+## Troubleshooting
+#### Work in Progress
+
