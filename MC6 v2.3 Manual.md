@@ -1,4 +1,5 @@
-# MC6 Firmware Manual 
+# Morningstar Engineering MC6 Manual 
+## Firmware v2.3
 This section explains how the controller works and how pressing individual switches or different switch combinations will interact with the controller.
 
 Please refer to the Midi Type Table as well for more information on selecting the correct midi type that you need.
@@ -32,27 +33,27 @@ To access the Controller Settings Menu, hold down switches [D + F] while powerin
 
 ![MainPage](https://raw.githubusercontent.com/Morningstar-Engineering/MC6-Midi-Controller/master/img/MainPage.png)
 
-### mThru
+### Set Midi Thru (mThru)
 Switch on/off the MIDI thru function on the MC6. This function allows the MC to relay MIDI messages from other devices to devices further down the MIDI chain.
 
-### Reset
+### Factory Reset (Reset)
 To do a factory reset, hold down for 2 seconds. The MC6 will show that it is performing a factory reset. All user presets and settings will be lost when a factory rest is done. 
 
 ![Channel](https://raw.githubusercontent.com/Morningstar-Engineering/MC6-Midi-Controller/master/img/Channel.png)
 
-### MidiCh
+### Set Midi Channel (MidiCh)
 Set the MIDI receive channel for the MC6. The MC6 can receive messages from external midi controllers.
 
 ![ChangeExp](https://raw.githubusercontent.com/Morningstar-Engineering/MC6-Midi-Controller/master/img/ChangeExp.png)
 
-### ChgInp
+### Change Input (ChgInp)
 Change Expression Input Type. The two 1/4 inch inputs on the MC6 can each be used independently for expression pedals or external aux switches.
 
 **IMPORTANT** - Please note that if you do not have any expression pedals/external switches connected to the MC6, your Expression Inputs should be set to [Expn Pedal]. Otherwise the MC6 will hang on the main page as it will think that an external switch is being pressed.
 
 ![alt text](https://raw.githubusercontent.com/Morningstar-Engineering/MC6-Midi-Controller/master/img/SwSens.png "SwSens")
 
-### SwSens
+### Switch Sensitivity (SwSens )
 Set switch sensitivity. Choose from 1 (least sensitive) to 5 (most sensitive). By default, this is set to 3 and should be comfortable for most users. Depending on personal taste, you may adjust sensitivity to help you bank up/down (by stepping on 2 switches at once) more accurately.
 
 ## SCROLLING THROUGH BANKS
@@ -73,7 +74,7 @@ On a new controller, all switches are initially labelled as EMPTY. It is up to y
 
 To program a switch:
 1. Press the switch you wish to program
-2. Press Switches [D + F] together. This will take you the the Switch Settings Menu shown below.
+2. Press **Switches [D + F]** together. This will take you the the Switch Settings Menu shown below.
 
 ![alt text](https://raw.githubusercontent.com/Morningstar-Engineering/MC6-Midi-Controller/master/img/ProgSw2.png "ProgSw2")
 
@@ -82,7 +83,7 @@ Edit the MIDI message that will be sent by each switch.
 
 ![alt text](https://raw.githubusercontent.com/Morningstar-Engineering/MC6-Midi-Controller/master/img/ProgMessage.png "ProgMessage")
 
-Use switches [A] and [B] to move between parameters, and switches [F] and [C] to increase and decrease parameter values. At any time, press [D+E] together to save your current message settings, and press [E+F] to return to the previous menu without saving.
+Use **switches [A] and [B]** to move between parameters, and **switches [F] and [C]** to increase and decrease parameter values. At any time, press **[D+E]** together to save your current message settings, and press **[E+F]** to return to the previous menu without saving.
 
 * M: This is the message number of the MIDI message that you are editing. Each switch on the MC6 can send up to 8 different MIDI messages at once. Press to scroll through the 8 messages to edit each one. 
 * Type: Choose the type of MIDI message you want to send. You can select from Program Change (PC), Control Change (CC), Toggle messages and many others. Please refer to our MIDI Message Types List on page 15 for the full list of messages available and what each one can do.
@@ -148,13 +149,13 @@ Choose what you want your expression pedal to control. Be sure to calibrate your
 Programming expression pedals is very similar to programming switches (refer to page 8). The CC number for your expression pedal message is represented by Number 1 and the range of values sent will be from Value 1 to Value 2. Each expression pedal can send up to 4 MIDI messages.
 
 ### Sens
-Adjust the sensitivity level of your expression pedal.
+Adjust the sensitivity level of your expression pedal. The MC6 works best with Expression Pedals using 10k ohm potentiometers, and you can set the sensitivity to the highest. If you're using a high valued potentiometer, you may encounter the expression read being jittery. If so, simply adjust the sensitivity to a lower setting.
 
 ### Calibrate
-Calibrate your expression pedal by setting the Heel Down and Toe Down positions.
+Calibrate your expression pedal by setting the Heel Down and Toe Down positions. This allows the MC6 to send the correct values for the full range of your Expression Pedal.
 
 ### Display
-When this feature is enabled, your expression pedal’s name (as named by you) and the expression pedal’s position will be displayed when the pedal is being moved.
+When this feature is enabled, your expression pedal’s name (as named by you) and the expression pedal’s position will be displayed when the pedal is being moved. While the name is being displayed, the MC6 will not send out any presets when a switch is pressed. Press Switch C to immediately exit the Expression Display.
 
 ## USING EXTERNAL CONTROLLERS
 You can connect external Aux or Midi controllers to your MC6 and expand its functionality and capability.
@@ -162,10 +163,10 @@ You can connect external Aux or Midi controllers to your MC6 and expand its func
 ### Aux Switch Controllers
 Connect your aux switches (eg. Morningstar SE3 Switch Expander available on our website) via stereo 1/4” cables to the expression inputs of the MC6. Each expression input can accept up to 3 aux switches. This will give you 6 more fully programmable switches (that’s a total of 12 switches).
 
-### Midi Controllers
+### External Midi Controllers
 Connect an external Midi controller to the MIDI IN of the MC6. This will allow you to control specific functions on the MC6, such as jumping immediately to specific banks, adding extra switches or banking up and down with your external Midi controller. 
 
-The MC6 is able to read incoming MIDI messages. It will read messages sent to the MIDI channel that it is set to. You can set the MC6 MIDI channel from the Global Controller Settings menu (refer to page 3). The functions you can control include:
+The MC6 is able to read incoming MIDI messages. It will read messages sent to the MIDI channel that it is set to. You can set the MC6 MIDI channel from the Global Controller Settings menu. The functions you can control include:
 
 |Function|CC Number|CC Value|
 |:------:|:-------:|:------:|
@@ -203,9 +204,9 @@ We work on firmware updates to continually improve your MC6 experience.
 Download the MC6 Updater Software and latest Firmware Updates from our downloads page at:
 http://www.morningstarfx.com/downloads
 
-Connect the MC6 to your computer via the included USB cable, and use the Updater Software to upload the latest firmware to your controller.
+Connect the MC6 to your computer via the included USB cable, and then run the Firmware Updater software. In the software, click on Upload. A file select box should appear. Simply navigate to the folder where you downloaded the firmware, and select the firmware that you downloaded. The software will load the new firmware into the controller and it will be indicated by a progress bar.
 
 
 ## Troubleshooting
-#### Work in Progress
+
 
