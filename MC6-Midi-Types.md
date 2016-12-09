@@ -1,11 +1,12 @@
 # MC6 Midi Types Reference
   Each preset contains 8 messages and sends them out in chronological order from message 1 to message 8.
-  Each Midi Type consists of 6 different parameters: <b>Type, Number, Value 1, Value 2 and Channel</b>.
+  Each Midi Type consists of 6 different parameters: **Type, Number, Value 1, Value 2 and Channel**.
   
   Depending on the Midi Type you choose for each message, the numbers and values will be used differently.
 
 # Message Descriptions
-## Empty Message
+---
+### Empty Message
 | Midi Type        | Number1         | Value1        |Number2        | Value2         | Details|
 |:----------------:|:----------------:|:--------------:|:--------------:| :--------------:| :--------------:|
 | Empty Message    | - | - | - | - | - |
@@ -13,8 +14,8 @@
 **Description**
 No data will be sent out.
 
-
-## Program Change
+---
+### Program Change
 | | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
 | **Values**   |0 - 127           |-              | -             | -              |1 - 16           |
@@ -26,7 +27,8 @@ Sends a Program Change message of a specified number and channel. Program Change
 **Example of Use**
 Activate a preset/patch on your Midi Device.
 
-## Control Change
+---
+### Control Change
 | | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
 | **Values**   |0 - 127           |-              | -             | -              |1 - 16           |
@@ -42,7 +44,8 @@ If you need a CC message sent continuously when the switch is held down, set N2 
 To activate the record function on the Strymon Timeline, send a CC message of Number 1 = 87 and Value 1 = Any 
 (Refer to Timeline Manual)
 
-## PC Toggle
+---
+### PC Toggle
 | | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
 | **Values**   |0 - 127           |-              | 0 - 127             | -              |1 - 16           |
@@ -53,7 +56,8 @@ This Midi message toggles between two Program Change message each time the switc
 **Example of Use**
 You can easily toggle between two presets with this message.
 
-## CC Toggle
+---
+### CC Toggle
 | | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
 | **Values**   |0 - 127           |0 - 127              | 0 - 127             | 0 - 127              |1 - 16           |
@@ -64,8 +68,8 @@ This Midi message sends a Control Change message with a different Control Change
 **Example of Use**
 You can control the Boost volume on the Strymon Timeline by sending CC message with Number = 23. The value range is between 0-60. Setting Value 1 = 0 and Value 2 = 60 will enable you to switch between a -3db and +3db boost.
 
-
-## PC Toggle Hold
+---
+### PC Toggle Hold
 | | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
 | **Values**   |0 - 127           | -              | 0 - 127             | -              |1 - 16           |
@@ -76,8 +80,8 @@ This Midi message sends a Program Change message with Number 1 when the switch i
 **Example of Use**
 Momentarily switch to a different preset for a special setting and then quickly go back to the original preset when the switch is released.
 
-
-## CC Toggle Hold
+---
+### CC Toggle Hold
 | | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
 | **Values**   |0 - 127           |0 - 127              | 0 - 127             | 0 - 127              |1 - 16           |
@@ -88,7 +92,8 @@ This Midi message sends a Control Change message with Number 1 and Value 1 when 
 **Example of Use**
 Quickly turn the delay mix on the Strymon Timeline down by stepping on the switch, and have the mix bank up when the switch is released. Set Number 1 and 2 = 14, Value 1 = 50 and Value 2 = 127.
 
-## CC Hold Delay
+---
+### CC Hold Delay
 | | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
 | **Values**   |0 - 127           |0 - 127              | 0 - 127             | 0 - 127              |1 - 16           |
@@ -99,8 +104,8 @@ Sends a Midi Control Change message only if the switch is held down for more tha
 **Example of Use**
 This function is very useful when you want to assign one footswitch to switch banks, and then activate a preset once you have selected your desired bank just by holding down on the footswitch. Another cool use for this is to set your looper's play function to Number 1 and Value 1, and Stop function to Number 2 and Value 2. That way, you can have 2 useful functions in one preset. Just press the switch once if you need to play the loop, and hold it down when you want to stop the loop.
 
-
-## Note On
+---
+### Note On
 | | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
 | **Values**   |0 - 127           |0 - 127         | -             | -              |1 - 16           |
@@ -108,7 +113,8 @@ This function is very useful when you want to assign one footswitch to switch ba
 **Description**
 Sends a Midi Note On Message with the Note Value as Number and Velocity as Value 1.
 
-## Note Off
+---
+### Note Off
 | | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
 | **Values**   |0 - 127           |0 - 127         | -             | -              |1 - 16           |
@@ -116,7 +122,8 @@ Sends a Midi Note On Message with the Note Value as Number and Velocity as Value
 **Description**
 Sends a Midi Note Off Message with the Note Value as Number and Velocity as Value 1.
 
-## Midi Clock Tap Tempo
+---
+### Midi Clock Tap Tempo
 | | Number1| Value1 |Number2| Value2| Channel |Comments|
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|:---:|
 | **Values**   |0 - 127           |0 - 127         | -             | -              |-           |-|
@@ -128,8 +135,8 @@ BPM = (Number1 * 100) + Value1
  
 This will be the BPM used on first tap. When in the Midi Clock menu, you can tap a new tempo and the Midi Clock signals will adjust to the new tempo simultaneously. When you are satisfied with the new tempo, you can either Exit the menu, or save the new tempo by holding down the Exit switch (Switch C). The LCD will indicate that the tempo is saved, before exiting the menu.
  
-
-## Strymon Bank Up
+---
+### Strymon Bank Up
 | | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
 | **Values**   |-                |-              | -             | -              |1 - 16               |
@@ -137,7 +144,8 @@ This will be the BPM used on first tap. When in the Midi Clock menu, you can tap
 **Description**
 Bank up on your Strymon Timeline, Möbius and Bigsky
 
-## Strymon Bank Down
+---
+### Strymon Bank Down
 | | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
 | **Values**   |-                |-              | -             | -              |1 - 16               |
@@ -145,7 +153,8 @@ Bank up on your Strymon Timeline, Möbius and Bigsky
 **Description**
 Bank down on your Strymon Timeline, Möbius and Bigsky
 
-## PC Scroll Up
+---
+### PC Scroll Up
 | | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
 | **Values**   |0 - 7           |0 - 1              | -             | -              |1 - 16           |
@@ -161,8 +170,8 @@ To scroll through multiple devices, set Msg1 to have Number1 = 0 and Value1 = 1.
 Read more here about this message type here:
 http://www.morningstarfx.com/single-post/2016/10/16/Using-the-PC-Scroll-Midi-Type
 
-
-## PC Scroll Down
+---
+### PC Scroll Down
 | | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
 | **Values**   |0 - 7           |0 - 1              | -             | -              |1 - 16           |
@@ -170,7 +179,8 @@ http://www.morningstarfx.com/single-post/2016/10/16/Using-the-PC-Scroll-Midi-Typ
 **Description**
 Similar to PC Scroll Up, but this Midi Type decreases the value instead.
 
-## MC6 Bank Up
+---
+### MC6 Bank Up
 | | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
 | **Values**   |-      |-         | -        | -         |-             |
@@ -178,7 +188,8 @@ Similar to PC Scroll Up, but this Midi Type decreases the value instead.
 **Description**
 This is useful if you need to bank up on the MC6 without having to step on two switches. You will be able to scroll up the banks if you hold down the switch. However, if you step once and release, you will need to wait for the bank to load before you are able to bank up again. If you want to have a dedicated bank up/down button in all the banks, you can copy this function and paste it to all banks by using the Copy All function (holding down the copy switch)
 
-## MC6 Bank Down
+---
+### MC6 Bank Down
 | | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
 | **Values**   |-      |-         | -        | -         |-             |
@@ -186,7 +197,8 @@ This is useful if you need to bank up on the MC6 without having to step on two s
 **Description**
 Similar to MC6 Bank Up function, but this banks down instead.
 
-## Conditional Type
+---
+### Conditional Type
 | | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
 | **Values**   |0 - 2           |0 - 3         | -             | -              |-           |
@@ -209,8 +221,8 @@ If switch is held down (600ms)|2|3|Skip to the next Conditional Placeholder (0:0
  
 Going back to the example earlier, you could set Msg1 to be a "Skip to placeholder" Conditional (2:2), Msg 2 to be your Bank Up/Down message, Msg3 to be a Placeholder Conditional (0:0), and then Msg4 to be your CC message to Active/Bypass your Strymon. You can now Bank Up/Down with each switch press, and when you need to call the Active/Bypass function without changing banks, just hold the switch down and only the Active/Bypass message will be sent out.
  
-
-## System Real Time
+---
+### System Real Time
 | | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
 | **Values**   |0 - 3           |-        | -             | -              |-           |
@@ -225,7 +237,8 @@ Sends different real time messages based on the value of Number 1.
 2|Stop
 3|Continue
  
-## AxeFX Tuner
+ ---
+### AxeFX Tuner
 | | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
 | **Values**   |0 - 127           |0 - 127              | 0 - 127             | 0 - 127              |1 - 16           |
@@ -241,7 +254,8 @@ Things to note
 1. Turn off Midi Thru on your AxeFX.
 2. Enable SysEx send on your AxeFX.
  
-## Custom SysEx Messages
+ ---
+### Custom SysEx Messages
 | | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
 | **Values**   |0 - 127           |0 - 127              | 0 - 127             | 0 - 127              |-           |
@@ -256,7 +270,8 @@ Hence, to send a SysEx array that looks like this: [240, 1, 2, 3, 4, 5, 6, 247],
 Midi Msg 1: N1 = 6, V1 = 1, N2 = 2, V2 = 3, Midi Type = SysEx
 Midi Msg 2: N1 = 4, V1 = 5, N2 = 6, V2 = 0, Midi Type = SysEx
 
-## Midi Thru
+---
+### Midi Thru
 | | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
 | **Values**   |0 - 1           |-        | -             | -              |-           |
@@ -267,7 +282,8 @@ Set the Midi Thru on the MC6 to On or Off. Use N1 = 0 to turn it [Off] and N1 = 
 **Example of Use**
 When you want certain presets to sync with Midi Clock sent from an external device through the MC6, and other presets not to sync with the external Midi Clock.
 
-## Clear Toggle
+---
+### Clear Toggle
 | | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
 | **Values**   |0 - 127           |0 - 127              | 0 - 127             | 0 - 127              |-           |
@@ -283,7 +299,8 @@ Alternatively, you can clear only selected presets by setting the parameters N1,
 1. Preset [A] and [B] are set to PC Toggle. Currently, when both Switch [A] and [B] are pressed, both Preset names will blink and their states will be set to [On].
 2. For Preset [A] to stop blinking and state set to [Off] after Switch [B] is pressed, add a [Clear Toggle] Midi Type to Preset [A] and [B], so that their states will be mutually exclusive and both Presets will not be at a [On] state at the same time. 
 
-## Clear Toggle (v2.4)
+---
+### Set Toggle
 | | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
 | **Values**   |0 - 127           |0 - 127              | 0 - 127             | 0 - 127              |-           |
@@ -292,7 +309,8 @@ Alternatively, you can clear only selected presets by setting the parameters N1,
 **Description**
 Similar to Clear Toggle, but sets the preset(s) to active.
 
-## Blink
+---
+### Blink
 
 | | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
@@ -301,7 +319,8 @@ Similar to Clear Toggle, but sets the preset(s) to active.
 **Description**
 To set any Midi Type to have a blinking effect, add this [Blink] Midi Type to your preset to toggle between [Off] and [On] states.
 
-## Set Bank
+---
+### Set Bank
 | | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
 | **Values**   |0 - 127           |-        | -        | -           |-     |
@@ -309,17 +328,23 @@ To set any Midi Type to have a blinking effect, add this [Blink] Midi Type to yo
 **Description**
 Jumps to different banks on the MC6, or return to the previous bank from where you jumped. Use N1 = 0 - 29 to switch to banks 1-30 on the MC6. Set N1 = 127 to go back to the previous bank.
 
-
-
-## Select Expression Message (v2.4)
+---
+### Select Expression Message
  | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
 | **Values**   |0 - 1           |0 - 8        | -             | -              |-           |
 | **Details**   |Expression Input Number. <br>0 = Exp1<br>1 = Exp2|Select Exp Msg. 0 = Select All<br>Else Msg| -| -|-|
 
-## Toggle Page (v2.4)
+**Description**
+Select a specific expression message to send from the list of 8 expression messages.
+
+---
+### Toggle Page
 
 | | Number1| Value1 |Number2| Value2| Channel |
 |:-----------:|:--------:|:--------:|:---------:| :----------:| :--------:|
 | **Values**   |-           |-        | -             | -              |-               
 | **Details**   |-       |-          | -             | -              |-      
+
+**Description**
+Toggles the main display page to show between Presets A-F and G-L.
