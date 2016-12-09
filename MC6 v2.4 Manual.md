@@ -1,8 +1,13 @@
 # MC6 Manual 
-## Firmware v2.4
+## FIRMWARE v2.4
 This section explains how the controller works and how pressing individual switches or different switch combinations will interact with the controller.
 
-Please refer to the Midi Type Table as well for more information on selecting the correct midi type that you need.
+Please refer to the [Midi Type Reference](https://app.classeur.io/#!/files/f08J3nTxR8LMm4lem9fu) as well for more information on selecting the correct midi type that you need.
+
+## OVERVIEW
+The MC6 is a fully programmable Midi controller. How it is structured is simple: There are **30 banks**. Each bank has **12 presets**, 6 of which are accessible from the 6 switches, while the other 6 is hidden but can be activated by other means such as dual switch presses or external controllers. Each preset can be programmed to send out **8 different messages**. These messages can range from your standard Midi messages such as CC and PC messages, or advanced functions such as Toggling, Midi Clock and much more.
+
+The full list of messages can be viewed here: [Midi Type Reference](https://app.classeur.io/#!/files/f08J3nTxR8LMm4lem9fu)
 
 ----------
 ## POWERING UP THE MC6
@@ -29,7 +34,7 @@ Your MC6 can be powered by any one of these methods:
 
 ## GLOBAL CONTROLLER SETTINGS
 ### Accessing Controller Settings
-To access the Controller Settings Menu, hold down **Switches [D + F]** before powering up the MC6.
+To access the Controller Settings Menu, hold down **Switches [D + F]** before powering up the MC6. The display will indicate that it is booting into the configuration page, and the menu below will be displayed:
 
 ![MainPage](https://raw.githubusercontent.com/Morningstar-Engineering/MC6-Midi-Controller/master/img/MainPage.png)
 
@@ -147,7 +152,7 @@ On the home screen, press switches [B+F] to enter Bank Edit mode shown above.
 ![alt text](https://raw.githubusercontent.com/Morningstar-Engineering/MC6-Midi-Controller/master/img/BankSettings1.png "BankSettings1")
 
 ### BankName
-Name your current bank. Naming banks is done the same way as naming switches. If you do not want the bank number to be displayed when switching banks, set the first bank name character to "#". The MC6 will skip the bank number display when changing banks and immediately display the presets.
+Name your current bank. Naming banks is done the same way as naming switches. If you do not want the bank number to be displayed when switching banks, set the first bank name character to "**#**". The MC6 will skip the bank number display when changing banks and immediately display the presets.
 ### Copy
 Copy current bank settings. All bank and switch settings on the current bank will be copied to clipboard.
 ### Paste
@@ -203,22 +208,23 @@ The MC6 is able to read incoming MIDI messages. It will read messages sent to th
 |Jump to Bank| 0 - 29|
 
 ## MC6 EDITOR (MAC AND PC COMPATIBLE)
-A software editor is available for you to program your MC6 switches even more quickly and easily. 
+A software and web editor is available for you to program your MC6 switches even more quickly and easily. 
 
-Download the MC6 Editor from our downloads page at:
+Download the MC6 Software Editor from our downloads page at:
 http://www.morningstarfx.com/downloads
+**Note:** In early Dec 2016, we upgraded the web editor, and have not pushed the changes to the software editor yet. We are aiming to do so by January 2017 after more feedback is received for the web editor.
 
-### Using the MC6 Software Editor
+The Editor is also available on the web, and can be accessed via Google Chrome or Opera browsers here:
+http://editor.morningstar.io
+
+### Using the MC6 Editor
 1.	Connect your MC6 to your computer via the included USB cable. 
-2.	On the home screen of your MC6, hold down switches [A+D] and then press [F] to enter Editor mode. Only then can the Software Editor detect the MC6 controller.
+2.	On the home screen of your MC6, press switches [C+D] to enter Editor mode. This enables the MC6 to start sending messages to the Editor.
 3.	To program a switch, just press on the switch you wish to program. It’s bank number and switch letter will be displayed on the Software Editor’s screen.
 4.	Name your switch, and input the parameters and values you wish to use.
 5.	Click on ‘Save’ or hit Enter to save your switch’s name and message settings.
+6.	When using the MC6 to communicate with your devices make sure to **toggle out of Editor Mode** so that the MC6 will not send any unnecessary messages. 
 
-### Using The Web Editor
-You can view the editor at http://editor.morningstar.io. This allows you to edit the parameters and settings on the midi controllers. All you need is an internet connection as well as the Google Chrome browser. The firmware required to use the Web Editor is v2.01 onwards.
-
-**IMPORTANT** - The MC6 Software Editor communicates with the MC6 on MIDI channel 1. If, you have any devices plugged into the same computer and receiving messages on MIDI channel 1, please be sure to unplug them to avoid conflicting messages.
 
 ## UPDATING FIRMWARE
 We work on firmware updates to continually improve your MC6 experience.
@@ -226,9 +232,39 @@ We work on firmware updates to continually improve your MC6 experience.
 Download the MC6 Updater Software and latest Firmware Updates from our downloads page at:
 http://www.morningstarfx.com/downloads
 
-Connect the MC6 to your computer via the included USB cable, and then run the Firmware Updater software. In the software, click on Upload. A file select box should appear. Simply navigate to the folder where you downloaded the firmware, and select the firmware that you downloaded. The software will load the new firmware into the controller and it will be indicated by a progress bar.
+Connect the MC6 to your computer via the included USB cable, and then run the **Firmware Updater software**. In the software, click on Upload. A file select box should appear. Simply navigate to the folder where you downloaded the firmware, and select the firmware that you downloaded. The software will load the new firmware into the controller and it will be indicated by a progress bar.
 
 
-## Troubleshooting
+## TROUBLESHOOTING
+### 1. General
+#### a. I've got no idea why I can't get it to work
+Head over to www.midimonitor.com to view the outgoing messages from your MC6. You can verify whether the messages coming out from the MC6 is as what you expected.
 
+Check that the MC6 Midi Out (closest to the USB port) is connected to your device Midi In.
 
+Ensure that your MC6 is not in Editor Mode.
+
+###  2. Outgoing Messages
+#### a. MC6 not sending expected messages
+Check that your MC6 is **OUT of Midi Editor mode** when trying to control your Midi devices. If your MC6 is in editor mode, it will be sending a bunch of messages meant for the Editor.
+#### b. MC6 is sending unexpected messages
+See 1a.
+
+### 3. Web/Desktop Editor
+#### a. I can't get the Editor to connect
+There are 3 reasons why the Editor cannot connect to your MC6. 
+1. You need to use a Midi-enabled browser. As of time  of writing, only Google Chrome and Opera supports [Web Midi](http://caniuse.com/#feat=midi).
+2. Your MC6 Midi channel is not aligned with the Editor channel. If your MC6 Midi Channel is set to 1, the Editor Channel drop down box should also be set to 1.
+3. Your MC6 is not in Editor mode. For v2.4 firmware, press Switch C+D to toggle in and out of editor mode.
+
+### 4. Fractal/AxeFX Specific
+Please read through the [AxeFX MIDI Wiki](http://wiki.fractalaudio.com/axefx2/index.php?title=MIDI_parameters_and_connectivity)
+#### a. I can't get phantom power to work
+You will need a 7/8 pin Midi cable that connected from your AxeFX Midi Out to your MC6 Midi In. You also need an additional AC power adaptor that connected to the back of your AxeFX phantom power port.
+
+#### b.  I can't get the Tuner to work.
+You need 2 midi cables connected the MC6 Midi OUT to the AxeFX Midi IN, as well as the AxeFX Midi OUT to the MC6 Midi IN. Disable Midi THRU on the MC6 and the AxeFX. Enable SysEx Messages on the AxeFX.
+
+### 5. Using an External Aux Controller
+#### a. Screen hangs when I plug it in
+Check that you are using a stereo cable. Also, you need to go into the config menu and set the expression input to [Aux Sw].
