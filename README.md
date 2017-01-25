@@ -7,4 +7,4 @@ Use the Firmware Uploader software to upload the firmware into your Morningstar 
 
 ## Developmental Release: v2.5.0 Beta
 
-#### If you enjoy living on the edge, this release has all the latest features. Most are experimental and still constantly changing. For a stable version, please download the latest stable release (v2.4).
+#### If you enjoy living on the edge, this release has all the latest features. Most are experimental and still constantly changing. For a stable version, please download the latest stable release.
