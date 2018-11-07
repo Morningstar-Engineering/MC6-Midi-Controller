@@ -2,7 +2,7 @@
 #### Binary releases for the Morningstar Engineering Midi Controllers
 Use the Firmware Uploader software to upload the firmware into your Morningstar Midi Controller.
 
-## Latest Stable Release: v2.5.0
+## Latest Stable Release: v2.6.1
 ### PLEASE READ THE RELEASE DOCUMENT AND NOTE THE CHANGES BEFORE UPLOADING
 
 ## Developmental Release: NA
