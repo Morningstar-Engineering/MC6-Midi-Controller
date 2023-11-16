@@ -46,7 +46,7 @@ Change Expression Input Type. The two 1/4 inch inputs on the MC6 can each be use
 Set switch sensitivity. Choose from 1 (least sensitive) to 5 (most sensitive). By default, this is set to 3 and should be comfortable for most users. Depending on personal taste, you may adjust sensitivity to help you bank up/down (by stepping on 2 switches at once) more accurately.
 
 ## SCROLLING THROUGH BANKS
-###Scrolling through Banks
+### Scrolling through Banks
 Step on switches [A + B] together to bank down and switches [B + C] to bank up. There are a total of 30 banks of 6 programmable switches on the MC6.
 
 ## SWITCHES AND DISPLAY NAMES
