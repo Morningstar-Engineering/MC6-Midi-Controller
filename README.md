@@ -1,4 +1,4 @@
-# MC6-Midi-Controller
+# MC6 MK1 MIDI Controller
 #### Binary releases for the Morningstar Engineering Midi Controllers
 Use the Firmware Uploader software to upload the firmware into your Morningstar Midi Controller.
 
